@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charsert="UTF-8">
+    <meta name="viewport" content="wodth=device-width, initial-scale=1.0">
     <title>My Projects</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href ="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap" rel="stylesheet"
+
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
 
     <header>
         <h1>MY IT Projects</h1>
+        
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -21,15 +29,21 @@
     <section>
         <h2>Recent Coursework</h2>
 
-        <article>
-            <h3>Network Administration Research Paper</h3>
-            <p>A research paper breaking down the daily responsibilities, required certifications (like CompTIA A+), and career outlook for network administrators.</p>
-        </article>
+        <div class="project-grid">
 
-        <article>
-            <h3>Database Sorting & SQL</h3>
+            <article class="project-card">
+                <h3>Network Administration Research Paper</h3>
+                
+                <p>A research paper breaking down the daily responsibilities, required certifications (like CompTIA A+), and career outlook for network administrators.</p>
+            </article>
+
+            <article class="project-card">
+            <h3>Database Sorting &amp; SQL</h3>
+                
             <p>Recent lab assignments writing basic SQL queries to sort and manage data</p>
         </article>
+
+        </div>      
     </section>
   </main>
 
