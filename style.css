@@ -1,0 +1,199 @@
+/* General page styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #222222; 
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #6a0dad;
+    margin-bottom: 16px;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+
+/* Header and navigation */
+
+header {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 24px;
+text-align: center;
+}
+
+header h1 { 
+    margin: 0 0 16px;
+}
+
+nav ul { 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;  justify-content: center;
+    gap: 24px;  
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c084fc;
+    text-decoration: underline;
+}
+
+
+/* Main page content */
+
+main {
+    max-width: 960px;
+    margin: 32px auto;
+    padding: 0 24px;
+}
+
+.welcome,
+.content-box {
+    background-color: #ffffff;
+    padding: 32px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+#home-intro {
+    border-top: 4px solid #6a0dad;
+}
+
+
+/* Button on the home page */
+
+.button {
+    display: inline-block;
+    background-color: #6a0dad;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color: #4b087a;
+}
+
+
+/* Project cards using CSS Grid */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 8px;
+    border-top: 4px solid #6a0dad;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.project-card h3 {
+      color: #6a0dad;
+      margin-top: 0;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 16px;
+    margin-top: 48px;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Tablet screens */
+
+@media screen and (max-width: 768px) {
+
+  main { 
+      margin: 24px auto; 
+      padding: 0 16px;
+  }
+
+.project-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .welcome,
+  .content-box {
+    padding: 24px;
+  }
+}
+
+/* Mobile screens */
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 16px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        margin: 16px auto;
+        padding: 0 16px;
+    }
+
+    .welcome,
+    .content-box,
+    .project-card {
+        padding: 16px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
+    .button {
+        display: block;
+        text-align: center;  
+    }
+
+    footer {
+        margin-top: 32px;
+    }
+}
